@@ -37,7 +37,7 @@ function ColorBox({ bgcolor, title, data, dark, main }) {
             </Grid>
             <Grid item>
               <Typography variant="subtitle1" color="inherit">
-                {title}
+                
               </Typography>
             </Grid>
           </Grid>

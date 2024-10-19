@@ -3,15 +3,15 @@ import {
   AppstoreAddOutlined,
   AntDesignOutlined,
   BarcodeOutlined,
-  BgColorsOutlined,
-  FontSizeOutlined,
-  LoadingOutlined
+  BookOutlined,
+  LoadingOutlined,
+  TeamOutlined
 } from '@ant-design/icons';
 
 // icons
 const icons = {
-  FontSizeOutlined,
-  BgColorsOutlined,
+  BookOutlined,
+  TeamOutlined,
   BarcodeOutlined,
   AntDesignOutlined,
   LoadingOutlined,
@@ -22,30 +22,24 @@ const icons = {
 
 const utilities = {
   id: 'utilities',
-  title: 'Utilities',
+  title: 'MENU ITEM',
   type: 'group',
   children: [
     {
       id: 'util-typography',
-      title: 'Typography',
+      title: 'Register Details',
       type: 'item',
-      url: '/typography',
-      icon: icons.FontSizeOutlined
+      url: '/registerdetails',
+      icon: icons.BookOutlined
     },
     {
       id: 'util-color',
-      title: 'Color',
+      title: 'Attendance',
       type: 'item',
-      url: '/color',
-      icon: icons.BgColorsOutlined
+      url: '/attendance',
+      icon: icons.TeamOutlined
     },
-    {
-      id: 'util-shadow',
-      title: 'Shadow',
-      type: 'item',
-      url: '/shadow',
-      icon: icons.BarcodeOutlined
-    }
+   
   ]
 };
 

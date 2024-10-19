@@ -3,6 +3,9 @@ import { lazy } from 'react';
 // project import
 import Loadable from 'components/Loadable';
 import Dashboard from 'layout/Dashboard';
+import Register from "./Register"
+import Attendance from './Attendance';
+import Qrcode from './Qrcode';
 
 const Color = Loadable(lazy(() => import('pages/component-overview/color')));
 const Typography = Loadable(lazy(() => import('pages/component-overview/typography')));
@@ -20,11 +23,11 @@ const MainRoutes = {
   children: [
     {
       path: '/',
-      element: <DashboardDefault />
+      element: <Register/>
     },
     {
-      path: 'color',
-      element: <Color />
+      path: 'attendance',
+      element:<Attendance/>
     },
     {
       path: 'dashboard',
@@ -44,8 +47,12 @@ const MainRoutes = {
       element: <Shadow />
     },
     {
-      path: 'typography',
-      element: <Typography />
+      path: 'registerdetails',
+      element: <Register/>
+    },
+    {
+      path: 'qrcode',
+      element: <Qrcode/>
     }
   ]
 };
